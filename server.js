@@ -3,6 +3,8 @@
 const express = require ('express');
 const path = require ('path');
 
+
+
 //point server to the route files
 const apiRoutes = require('./routes/apiRoutes');
 const htmlRoutes = require('./routes/htmlRoutes');
@@ -16,15 +18,15 @@ const PORT = process.env.port || 3001;
 // Middleware for parsing JSON and urlencoded form data
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-// app.use('/api', apiRoutes);
-// app.use('/', htmlRoutes);
+app.use('/api', apiRoutes);
+app.use('/', htmlRoutes);
 
 app.use(express.static('public'));
 
 
 // GET Route for homepage
 app.get('/', (req, res) =>
-  res.sendFile(path.join(__dirname, 'index.html'))
+  res.sendFile(path.join(__dirname, './public/index.html'))
 );
 
 //GET route for notes page
