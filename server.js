@@ -13,7 +13,7 @@ const htmlRoutes = require('./routes/htmlRoutes');
 const app = express();
 
 //set port
-const PORT = process.env.port || 8080;
+const PORT = process.env.port;
 
 // Middleware for parsing JSON and urlencoded form data
 app.use(express.json());
