@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "start": "node index.js"
+ },
   "name": "note-taker",
   "version": "1.0.0",
   "description": "",
