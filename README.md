@@ -15,8 +15,8 @@
 
   ## Screenshots
 
-  ![Application Preview](./assets/images/screenshot1.png?raw=true "landing page")
-  ![Application Preview](./assets/images/screenshot2.png?raw=true "notes page")
+  ![Application Preview](./public/assets/images/screenshot1.png?raw=true "landing page")
+  ![Application Preview](./public/assets/images/screenshot2.png?raw=true "notes page")
 
 
 
