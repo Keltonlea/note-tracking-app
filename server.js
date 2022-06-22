@@ -13,7 +13,7 @@ const htmlRoutes = require('./routes/htmlRoutes');
 const app = express();
 
 //set port
-const PORT = process.env.port || 3001;
+const PORT = process.env.port || 3000;
 
 
 // Middleware for parsing JSON and urlencoded form data
@@ -38,6 +38,6 @@ app.get('/notes', (req, res) =>
 
 
 //setup listener 
-app.listen(PORT,'0.0.0.0', () =>
+app.listen(PORT, () =>
   console.log(`App listening on port ${PORT} 🚀`)
 );

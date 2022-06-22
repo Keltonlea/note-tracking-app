@@ -24,10 +24,6 @@ router.post('/notes', (req, res) => {
 // Bonus - DELETE request
 
 
-
-
-
-
 router.delete('/notes/:id', function (req, res) {
     saveData
         .deleteNote(req.params.id)
