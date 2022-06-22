@@ -26,7 +26,6 @@ router.post('/notes', (req, res) => {
 
 
 
- // Deletes a note with specific id
 
 
 router.delete('/notes/:id', function (req, res) {
